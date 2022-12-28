@@ -44,10 +44,10 @@ export class UserCard extends Component {
     return (
       <Card>
         <Logo src={logo} alt="Logo" />
-        <Background src={image} alt="Background" />
+        <Background src={image} alt="image" />
         <Line></Line>
         <Icon>
-          <img src={icon} alt="Avatar" />
+          <img src={icon} alt="icon" />
         </Icon>
         <ul>
           <Tweets>777 tweets</Tweets>

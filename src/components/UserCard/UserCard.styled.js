@@ -1,18 +1,4 @@
 import styled from 'styled-components';
-export const Logo = styled.img`
-  width: 88px;
-  height: 26px;
-  position: absolute;
-  left: 5.29%;
-  right: 75.33%;
-  top: 4.39%;
-`;
-export const Background = styled.img`
-  width: 357px;
-  height: 194px;
-  margin: 34px 45px 0 52px;
-  padding: 0;
-`;
 export const Card = styled.div`
   width: 454px;
   height: 547px;
@@ -26,6 +12,20 @@ export const Card = styled.div`
   border-radius: 24px;
   position: relative;
   margin: 0 auto;
+`;
+export const Logo = styled.img`
+  width: 88px;
+  height: 26px;
+  position: absolute;
+  left: 5.29%;
+  right: 75.33%;
+  top: 4.39%;
+`;
+export const Background = styled.img`
+  width: 357px;
+  height: 194px;
+  margin: 34px 45px 0 52px;
+  padding: 0;
 `;
 export const Button = styled.button`
   width: 226px;
