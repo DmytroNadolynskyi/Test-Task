@@ -1,20 +1,19 @@
-.Logo {
+import styled from 'styled-components';
+export const Logo = styled.img`
   width: 88px;
   height: 26px;
   position: absolute;
   left: 5.29%;
   right: 75.33%;
   top: 4.39%;
-}
-
-.Background {
+`;
+export const Background = styled.img`
   width: 357px;
   height: 194px;
   margin: 34px 45px 0 52px;
   padding: 0;
-}
-
-.UserCard {
+`;
+export const Card = styled.div`
   width: 454px;
   height: 547px;
   background: linear-gradient(
@@ -27,12 +26,13 @@
   border-radius: 24px;
   position: relative;
   margin: 0 auto;
-}
-
-.Button {
+`;
+export const Button = styled.button`
   width: 226px;
   height: 56px;
   background: #ebd8ff;
+  background-color: ${({ onFollowStatus }) =>
+    onFollowStatus ? '#ebd8ff' : '#5cd3a8'};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   border: none;
@@ -48,15 +48,14 @@
   top: 443px;
   cursor: pointer;
   transition: 250ms;
-}
+`;
 
-
-.BtnActive {
-  composes: Button;
-  background-color: #5cd3a8;
-}
-
-.Line {
+// export const Logo = styled.img`
+// .BtnActive {
+//   composes: Button;
+//   background-color: #5cd3a8;
+// }
+export const Line = styled.span`
   position: absolute;
   width: 454px;
   height: 8px;
@@ -65,15 +64,13 @@
   background: #ebd8ff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #ae7be3,
     inset 0px 4px 3px #fbf8ff;
-}
-
-.Icon {
+`;
+export const Icon = styled.div`
   position: absolute;
   left: 181px;
   top: 209px;
-}
-
-.Tweets {
+`;
+export const Tweets = styled.li`
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -83,10 +80,15 @@
   color: #ebd8ff;
   text-align: center;
   margin-top: 105px;
-  
-}
-
-.Followers {
-  composes: Tweets;
+`;
+export const Followers = styled.li`
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #ebd8ff;
+  text-align: center;
   margin-top: 20px;
-}
+`;
