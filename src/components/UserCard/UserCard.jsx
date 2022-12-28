@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import {
   Logo,
-  Background,
+  Image,
   Card,
   Button,
   Line,
@@ -44,7 +44,7 @@ export class UserCard extends Component {
     return (
       <Card>
         <Logo src={logo} alt="Logo" />
-        <Background src={image} alt="image" />
+        <Image src={image} alt="image" />
         <Line></Line>
         <Icon>
           <img src={icon} alt="icon" />

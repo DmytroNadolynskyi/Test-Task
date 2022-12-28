@@ -21,7 +21,7 @@ export const Logo = styled.img`
   right: 75.33%;
   top: 4.39%;
 `;
-export const Background = styled.img`
+export const Image = styled.img`
   width: 357px;
   height: 194px;
   margin: 34px 45px 0 52px;
