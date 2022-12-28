@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-.Card {
+.UserCard {
   width: 454px;
   height: 547px;
   background: linear-gradient(
@@ -29,7 +29,7 @@
   margin: 0 auto;
 }
 
-.Btn {
+.Button {
   width: 226px;
   height: 56px;
   background: #ebd8ff;
@@ -50,12 +50,9 @@
   transition: 250ms;
 }
 
-.Btn:hover {
-  transform: scale(0.97);
-}
 
 .BtnActive {
-  composes: Btn;
+  composes: Button;
   background-color: #5cd3a8;
 }
 
@@ -70,7 +67,7 @@
     inset 0px 4px 3px #fbf8ff;
 }
 
-.Avatar {
+.Icon {
   position: absolute;
   left: 181px;
   top: 209px;

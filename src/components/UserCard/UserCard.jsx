@@ -9,18 +9,18 @@ export class UserCard extends Component {
     followers: this.props.followers,
     follow: false,
   };
-
+  
   componentDidUpdate(prevState) {
-    if (prevState.isFollowing !== this.state.follow) {
+    if (prevState.follow !== this.state.follow) {
       localStorage.setItem('follow', JSON.stringify(this.state.follow));
     }
   }
-
+  
   componentDidMount() {
     const parsedStatus = JSON.parse(localStorage.getItem('follow'));
 
     if (parsedStatus) {
-      this.setState({ isFollowing: parsedStatus });
+      this.setState({ follow: parsedStatus });
     }
   }
 
@@ -31,20 +31,22 @@ export class UserCard extends Component {
   };
 
   render() {
+    const { followers,follow } = this.state;
     return (
-      <div className={css.Card}>
+      
+      <div className={css.UserCard}>
         <img src={logo} alt="Logo" className={css.Logo} />
         <img src={image} alt="Background" className={css.Background} />
         <span className={css.Line}></span>
-        <div className={css.Avatar}>
+        <div className={css.Icon}>
           <img src={icon} alt="Avatar" />
         </div>
         <ul>
           <li className={css.Tweets}>777 tweets</li>
           <li className={css.Followers}>
-            {this.state.follow
-              ? (this.state.followers + 1).toLocaleString('en-US')
-              : this.state.followers.toLocaleString('en-US')}{' '}
+            {follow
+              ? (followers + 1).toLocaleString('en-US')
+              : followers.toLocaleString('en-US')}{' '}
             followers
           </li>
         </ul>
@@ -53,9 +55,9 @@ export class UserCard extends Component {
           <button
             type="button"
             onClick={this.onToggle}
-            className={this.state.follow ? css.BtnActive : css.Btn}
+            className={follow ? css.BtnActive : css.Button}
           >
-            {this.state.follow ? 'Following' : 'Follow'}
+            {follow ? 'Following' : 'Follow'}
           </button>
         </div>
       </div>
