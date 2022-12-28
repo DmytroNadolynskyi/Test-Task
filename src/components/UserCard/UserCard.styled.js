@@ -31,8 +31,8 @@ export const Button = styled.button`
   width: 226px;
   height: 56px;
   background: #ebd8ff;
-  background-color: ${({ onFollowStatus }) =>
-    onFollowStatus ? '#ebd8ff' : '#5cd3a8'};
+  background-color: ${({ FollowStatus }) =>
+    FollowStatus ? '#ebd8ff' : '#5cd3a8'};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   border: none;

@@ -60,7 +60,7 @@ export class UserCard extends Component {
         </ul>
 
         <div>
-          <Button type="button" onClick={this.onToggle} onFollowStatus={follow}>
+          <Button type="button" onClick={this.onToggle} FollowStatus={follow}>
             {follow ? 'Following' : 'Follow'}
           </Button>
         </div>
