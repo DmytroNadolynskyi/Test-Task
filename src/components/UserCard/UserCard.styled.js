@@ -50,11 +50,6 @@ export const Button = styled.button`
   transition: 250ms;
 `;
 
-// export const Logo = styled.img`
-// .BtnActive {
-//   composes: Button;
-//   background-color: #5cd3a8;
-// }
 export const Line = styled.span`
   position: absolute;
   width: 454px;

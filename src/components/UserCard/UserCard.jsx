@@ -33,7 +33,7 @@ export class UserCard extends Component {
     }
   }
 
-  onToggle = () => {
+  onButtonClick = () => {
     this.setState(prevState => ({
       follow: !prevState.follow,
     }));
@@ -60,7 +60,7 @@ export class UserCard extends Component {
         </ul>
 
         <div>
-          <Button type="button" onClick={this.onToggle} FollowStatus={follow}>
+          <Button type="button" onClick={this.onButtonClick} FollowStatus={follow}>
             {follow ? 'Following' : 'Follow'}
           </Button>
         </div>
